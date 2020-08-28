@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 import { connect } from 'react-redux';
 import { deleteExperience } from '../../actions/profile';
-import { profile_url } from 'gravatar';
 
 const Experience = ({ experience, deleteExperience }) => {
   const experiences = experience.map(exp => (
