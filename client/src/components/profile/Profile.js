@@ -13,7 +13,8 @@ const Profile = ({
 }) => {
   useEffect(() => {
     getProfileById(match.params.id);
-  }, [getProfileById]);
+  }, [getProfileById, match.params.id]);
+
   return <Fragment>
     {profile === null || loading ? <Spinner /> : <Fragment>
       <Link to='/profiles' className='btn btn-light'>
