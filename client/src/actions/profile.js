@@ -8,7 +8,8 @@ import {
   UPDATE_PROFILE,
   CLEAR_PROFILE,
   ACCOUNT_DELETED,
-  GET_REPOS
+  GET_REPOS,
+  NO_REPOS
 } from './types';
 
 // Get current users profile
@@ -71,14 +72,16 @@ export const getGithubRepos = username => async dispatch => {
   try {
     const res = await axios.get(`/api/profile/github/${username}`);
 
+    console.log(res.data)
+
     dispatch({
       type: GET_REPOS,
       payload: res.data
     })
+
   } catch (err) {
     dispatch({
-      type: PROFILE_ERROR,
-      payload: { msg: err.response.statusText, status: err.response.status }
+      type: NO_REPOS
     });
   }
 };
