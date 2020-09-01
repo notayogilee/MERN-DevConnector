@@ -131,8 +131,6 @@ export const getPost = id => async dispatch => {
 
 export const addComment = (postId, formData) => async dispatch => {
 
-  console.log(postId)
-
   const config = {
     headers: {
       'Content-Type': 'application/json'
