@@ -1,5 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://Leekers:Leekers2000@devconnector.nae17.mongodb.net/DevConnector?retryWrites=true&w=majority",
-  "jwtSecret": "Leekerstokenbra",
-  "githubToken": "ba839f983aff6136981d9880c6828a05d095fa91"
-}
