@@ -7,7 +7,7 @@ The app has been deployed to https://lee-dev-connector.herokuapp.com
 It is deployed on free tier on Heroku and MongoDB so I may need to clear the database once in a while.
 
 ## Install on your local machine
-Once cloned, add a default.json file in config folder (there is an exampleDefault.json as template)
+Once cloned, add a default.json file in config folder of client
 ```
 {
   "mongoURI": "<your_mongoDB_Atlas_uri_with_credentials>",
